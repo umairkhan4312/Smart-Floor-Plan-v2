@@ -132,7 +132,7 @@ class _ConverterScreenState extends State<ConverterScreen> {
                         ),
                         if (source.isPdf && source.pdfPages > 1)
                           DropdownButtonFormField<int>(
-                            initialvalue: _page,
+                            initialValue: _page,
                             decoration: const InputDecoration(
                               labelText: 'PDF page to generate',
                             ),
