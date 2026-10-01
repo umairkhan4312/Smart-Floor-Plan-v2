@@ -56,7 +56,7 @@ class FloorPlanConverter {
       FloorPlanStyle.clean2d => 'clean_2d',
       FloorPlanStyle.colored2d => 'coloured_2d',
     };
-    final outputName = '${base}${pageSuffix}_${styleSuffix}_home_assistant.png';
+    final outputName = '$base${pageSuffix}_${styleSuffix}_home_assistant.png'; 
     final outputPath = p.join(outputDirectory.path, outputName);
 
     late final Uint8List sourceBytes;
