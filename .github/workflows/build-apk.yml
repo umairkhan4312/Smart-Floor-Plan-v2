@@ -27,8 +27,9 @@ jobs:
           cache: true
 
       - name: Generate Android files
-        run: flutter create --platforms=android .
-
+        run: |
+          flutter create --platforms=android .
+          rm -f test/widget_test.dart
       - name: Install packages
         run: flutter pub get
 
